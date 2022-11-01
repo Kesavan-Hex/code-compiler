@@ -1,0 +1,167 @@
+:root {
+    --shade-hotpink: #f07167;
+    --fadewhite: #f5ebe0;
+    --fadeblue: #180a96;
+    --deep-fade-blue: #3f37c9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: linear-gradient(45deg, rgb(147, 33, 147), pink, rgb(161, 44, 245));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter: blur();
+    -webkit-filter: blur(90%);
+}
+
+.code-editor {
+
+    width: 150vh;
+    height: 90vh;
+    background-color: #494c5f;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, rgb(147, 33, 147), pink, rgb(161, 44, 245));
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#editor{
+    font-family: 'JetBrains Mono';
+}
+
+
+.IO-area {
+    border-radius: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    background-color: #5c616d;
+}
+
+.editor {
+    background-image: linear-gradient(-45deg, rgb(147, 33, 147), pink, rgb(161, 44, 245));
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+.select-language {
+    text-align: right;
+    background-color: #494c5f;
+}
+
+.selectBox {
+    margin: 15px;
+    width: 140px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    text-align: center;
+}
+
+
+.select-language select {
+    background-color: #282a36;
+    margin-right: 15px;
+}
+
+/*2nd grid*/
+.input h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+}
+
+.input textarea {
+    width: 500px;
+    height: 150px;
+    padding-left: 10px;
+    background-color: #282a36;
+    margin: 2vh 2.5vh;
+    font-size: 1.1rem;
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    font-family: 'JetBrains Mono';
+}
+
+.input textarea::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.input textarea::-webkit-scrollbar-thumb {
+
+    background-color: rgb(239, 123, 142);
+    border-radius: .4rem;
+}
+
+
+.button-container button {
+    margin-right: 40px;
+
+    background-color: rgb(8, 238, 8);
+    border-color: green;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px;
+    float: right;
+}
+
+.button-container button:hover {
+    background-color: rgb(145, 145, 239);
+    border-color: green;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/*3rd grid*/
+.output h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Lucida Console", "Courier New", 'cursive';
+    font-size: 30px;
+}
+
+.output textarea {
+    width: 500px;
+    height: 200px;
+    padding-left: 10px;
+    background-color: #282a36;
+    margin: 2vh 2.5vh;
+    font-size: 1.1rem;
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    font-family: 'JetBrains Mono';
+}
+
+.output textarea::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.output textarea::-webkit-scrollbar-thumb {
+
+    background-color: rgb(239, 123, 142);
+    border-radius: .4rem;
+}
